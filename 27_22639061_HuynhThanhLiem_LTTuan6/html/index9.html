@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sum(num1,num2){
+            var total=num1+num2;
+            alert("Sum:"+total);
+        }
+        // tra gia tri tro ve return
+        function sum1(num1,num2){
+            var total=num1+num2;
+            return total;
+        }
+      alert(sum1(10,10));
+       // sum(2,10);
+
+    // phạm vi biến cục bộ toàn cục
+    // biến cục bộ chỉ xài trong hàm , biến toàn cục được khai báo bên ngoài nên khi thực hiện nó có thể thực hiện lẫn trong hàm
+    
+
+        var greet = "Hello World!"; //biến toàn cục
+        // Defining function
+        function greetWorld(){
+            alert(greet);
+        }
+        greetWorld(); // Outputs: Hello World!
+        alert(greet); // Outputs: Hello World! 
+        // Do khai báo greet bên ngoài hàm (toàn cục) 
+
+        function greetWorld(){
+            var greet = "Hello World!";
+            alert(greet);
+        }
+        greetWorld(); // Outputs: Hello World!
+        alert(greet); // lỗi: greet không tìm thấy -> biến cục bộ và khai báo bên trong hàm khi gọi sẽ lỗi
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow: auto;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #6fcced, #5ea3f0);
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+    background: linear-gradient(to right, #ffffff 10%, #ffffff00 0%) bottom/40px 4px repeat-x;
+}
+
+nav {
+    display: flex;
+    column-gap: 3em;
+}
+
+nav>a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.25em;
+    transition: all 1s;
+}
+
+nav>a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, p, label {
+    color: white;
+}
+
+h1 {
+    color: white;
+    text-shadow: 0 0 5px #0a3fcf, 0 0 10px #0a3fcf, 0 0 3px black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0.25em 0;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+h3 {
+    text-indent: 10%;
+    font-size: 2.25em;
+    margin-bottom: 0;
+    color: blue;
+    text-shadow: 3px 3px 1px #0000ffaa;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    margin-top: auto;
+    color: white;
+    padding-top: 1em;
+    background: linear-gradient(to right, #ffffff 10%, #ffffff00 0%) top/40px 4px repeat-x;
+}
+
+main {
+    display: flex;
+    column-gap: 3em;
+    padding: 3em 5em 2em 1em;
+}
+
+.float-left {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 50%;
+}
+
+.float-left>p {
+    text-align: justify;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+form>label, input, textarea {
+    width: 50%;
+}
+
+form>textarea {
+    color: #000;
+}
+
+form>input, select, textarea {
+    margin-bottom: 0.25em;
+    border: 1px solid #00f;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    column-gap: 0.29em;
+    margin-left: 50%;
+}
+
+#submit{
+    border: 1px dashed black;
+}
+
+#reset{
+    border: 1px dashed black;
+}
+
+.float-right {
+    float: right;
+    width: 50%;
+}
+
+.float-right>img {
+    width: 100%;
+}
+
+.float-right>p {
+    font-size: 1.70em;
+    text-indent: 15%;
+    margin-top: 0px;
+    color: blue;
+    font-weight: bold;
+    size: 1.25em;
+    margin-left: 10px;
+}
+

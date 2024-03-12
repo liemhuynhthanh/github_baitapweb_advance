@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+}
+#k1{
+    margin-top: 20px;
+    width: 1000px;
+    height: 900px;
+    border: 1px solid gainsboro;
+}
+header{
+    width: 95%;
+    height: 150px;
+    background-image:url(../imgae/background.png);
+}
+nav{
+    width: 95%;
+    height: 50px;
+    background-color: rgb(250, 215, 215);
+}
+section{
+    float: left;
+    height: 600px;
+    width: 70%;
+   
+  
+}
+aside{
+    width: 30%;
+    height: 600px;
+   
+    float: left;
+    
+}
+#se1,#se2{
+    width: 95%;
+    height: 270px;
+  
+    margin-top: 15px;
+    margin-left: 15px;
+
+}
+footer{
+    clear: both;
+    width: 97%;
+    height: 50px;
+    background-color: gray;
+}
+article{
+    width: 95%;
+    height: 270px;
+   
+    margin-top: 15px;
+    padding: 5px;
+}
+#kar,figure{
+    float: left;
+    width: 46%;
+    margin-top: 40px;
+}
+p{
+    font-size: 15px;
+}
+h3,h4{
+    margin-top: 10px;
+    font-size: 20px;
+}
+#kar,#kar1{
+    margin-left:10px ;
+   
+}
+
+#hi2{
+    width: 275px;
+}
+#hi3{
+    width: 275px;
+   
+}
+h1,h2{
+    color: white;
+    position: relative;
+    top: -120px;
+    left: 130px;
+}
+#hi1{
+    height: 150px;
+}
+h1{
+    font-size: 50px;
+
+}
+#c1 li{
+    display: inline;
+    width: 100px;
+    padding-left: 20px;
+    line-height: 50px;
+}
+#c1 li a{
+    text-decoration: none;
+    color: white;
+}
+#c1 li a:hover{
+    color: black;
+}
+#se1 h4{
+    width: 90%;
+    margin-top: 5px;
+    color: pink;
+    
+}
+#se1 span,#se2 span{
+    font-size: 25px;
+    color: pink;
+}
+#se1 p{
+    width: 80%;
+    font-size: 18px;
+    color: pink;
+    border-bottom: 1px gray solid;
+    margin-bottom: 15px;
+    
+}
+#se2 p{
+    font-size: 17px;
+}
+
+#footer{
+    line-height: 50px;
+    color: white;
+}
+#se2{
+    margin-top: 80px;
+}
+#main{
+    border-right:  solid 1px gray;
+}

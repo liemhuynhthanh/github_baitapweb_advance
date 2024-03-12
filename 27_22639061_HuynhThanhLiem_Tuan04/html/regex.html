@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Regex</title>
+    <script>
+        function checkName(){
+            var name= document.getElementById("txtName").value;
+            var checkName = /^([A-Z]{1}[a-z]{0,6})+(\s([A-Z]{1}[a-z]{0,6})|[A-Z])+\s*$/;
+          //  var checkName=/^[A-Z][a-z]*(\s[A-Z][a-z]*)*$/;
+            alert(checkName.test(name)?"Nhập đúng định dạng":"Nhập sai định dạng");
+        }
+        function checkMail(){
+            var mail=document.getElementById("txtMail").value;
+            var checkMail=/[A-Za-z0-9]+\@[a-z{0,5}]+\.+(com)/;
+            alert(checkMail.test(mail)?"Nhập đúng định dạng":"Nhập sai định dạng");
+
+        }
+        function checkDateOfBirth(){
+            var dob=document.getElementById("txtDOB").value;
+            var checkDOB=/^(0[1-9]|[12][0-9]|3[0-1])\/(0[1-9]|1[0-2])\/(19|20)\d{2}$/;
+            alert(checkDOB.test(dob)?"Nhập đúng định dạng":"Nhập sai định dạng nhập lại theo (dd/mm/yyyy)");
+    
+        }
+
+        function checkPhone(){
+            var phone= document.getElementById("txtPhone").value;
+               // var checkPhone = /^\d{10}$/;
+              var checkPhone=/^(032|033|034|035|036|037|038|039|096|097|098|086|083|084|085|081|082|088|091|094|070|079|077|076|078|090|093|089|056|058|092|059|099)[0-9]{7}$/
+
+            alert(checkPhone.test(phone)?"Nhập đúng định dạng":"Nhập sai định dạng");
+        }
+
+        function checkCode(){
+            var code= document.getElementById("txtCode").value;
+               var checkCode=/^([0-9]{4}-){3}\d{4}$/;
+
+            alert(checkCode.test(code)?"Nhập đúng định dạng":"Nhập sai định dạng nhập lại(xxxx-xxxx-xxxx-xxxx)");
+
+        }
+
+        function checkPassWord(){
+            var passWord= document.getElementById("txtPassWord").value;
+            var checkPassWord = /^[A-Za-z0-9@$!%*#?&]{8,20}$/;
+
+            alert(checkPassWord.test(passWord)?"Nhập đúng định dạng":"Nhập sai định dạng nhập lại");
+
+        }
+    </script>
+</head>
+<body>
+    <div id="body">
+        <h1>KIỂM TRA BIỂU THỨC CHÍNH QUY</h1>
+
+        <p>
+            <h4>Nhập họ tên: </h4>
+            <input type="text" name="txtName" id="txtName" placeholder="Họ tên">
+            <button onclick="checkName();" class="button">Check Name</button>
+        </p>
+       
+    
+        <p>
+            <h4>Nhập địa chỉ email: </h4>
+            <input type="text" name="txtMail" id="txtMail" placeholder="Email">
+            <button onclick="checkMail();" class="button">Check Mail</button>
+        </p>
+       
+    
+        <p>
+            <h4>Nhập ngày sinh(dd/mm/yyyy): </h4>
+            <input type="text" name="txtDOB" id="txtDOB" placeholder="Ngày sinh">
+            <button onclick="checkDateOfBirth();" class="button">Check DOB</button>
+        </p>
+       
+        
+        <p>
+            <h4>Nhập số điện thoại: </h4>
+            <input type="text" name="txtPhone" id="txtPhone" placeholder="Số điện thoại">
+            <button onclick="checkPhone();" class="button">Check phone</button>
+        </p>
+       
+    
+        <p>
+            <h4>Nhập mã code(xxxx-xxxx-xxxx-xxxx): </h4>
+            <input type="text" name="txtCode" id="txtCode" placeholder="Mã code">
+            <button onclick="checkCode();" class="button">Check Code</button>
+        </p>
+
+        <p>
+            <h4>Nhập password: </h4>
+            <input type="text" name="txtPassWord" id="txtPassWord" placeholder="Mật khẩu">
+            <button onclick="checkPassWord();" class="button">Check password</button>
+        </p>
+
+    </div>
+   
+
+</body>
+</html>

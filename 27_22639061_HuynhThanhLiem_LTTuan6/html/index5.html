@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var diemTB = parseFloat(prompt("Nhập điểm trung bình:"));
+    
+      
+        if (diemTB >= 0 && diemTB <= 10) {
+            if (diemTB >= 8) {
+                alert("Xếp loại: Giỏi");
+            } else if (diemTB >= 6.5) {
+                alert("Xếp loại: Khá");
+            } else if (diemTB >= 5) {
+                alert("Xếp loại: Trung bình");
+            } else {
+                alert("Xếp loại: Yếu");
+            }
+        } else {
+            alert("Điểm trung bình không hợp lệ. Vui lòng nhập lại từ 0 đến 10.");
+        }
+    </script>
+    
+</head>
+<body>
+    
+</body>
+</html>

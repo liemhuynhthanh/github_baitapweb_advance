@@ -1,0 +1,22 @@
+#hi1{
+    width: 60%;
+    height: 180px;
+    position: absolute;
+    top: 20px;
+    left: 300px;
+}
+body {
+ 
+    height: 100vh;
+    background-image: url('../image/background.jpg');
+    background-position: top left, top right, bottom left, bottom right;
+    background-size: 50% 50%;
+    overflow-x: hidden
+   
+}
+#hi2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -30%) scale(1.5);
+}

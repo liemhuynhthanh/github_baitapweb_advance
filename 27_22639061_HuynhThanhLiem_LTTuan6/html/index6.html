@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       
+        var thang = parseInt(prompt("Nhập vào số tháng (1-12):"));
+        if (thang >= 1 && thang <= 12) {
+            switch (thang) {
+                case 2:
+                    alert("Tháng 2 có 28 ngày.");
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    alert("Tháng " + thang + " có 30 ngày.");
+                    break;
+                default:
+                    alert("Tháng " + thang + " có 31 ngày.");
+            }
+        } else {
+            alert("Giá trị tháng không hợp lệ. Vui lòng nhập lại từ 1 đến 12.");
+        }
+    </script>
+    
+</head>
+<body>
+    
+</body>
+</html>
